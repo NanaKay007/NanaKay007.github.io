@@ -56,6 +56,7 @@ export default function HomePage() {
                 <div className="work-year">{experience.year}</div>
                 <div className="work-content">
                   <h3 className="work-role">{experience.role}</h3>
+                  <p className="work-company">{experience.company}</p>
                   <p className="work-desc">{experience.description}</p>
                 </div>
               </div>
