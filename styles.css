@@ -1266,39 +1266,50 @@ body.homepage-active .hero-photo {
 
 /* Responsive */
 @media (max-width: 768px) {
+    /* Disable split-screen effect on mobile */
+    body.homepage-active .navbar,
     .navbar {
-        margin-right: 0;
+        margin-right: 0 !important;
     }
 
+    body.homepage-active .nav-container,
     .nav-container {
         flex-direction: column;
         gap: 1rem;
-        margin-right: 0;
+        margin-right: 0 !important;
     }
 
     .nav-menu {
         gap: 1.5rem;
     }
 
+    /* Hero photo: show but make it part of the flow, not fixed */
+    body.homepage-active .hero-photo,
     .hero-photo {
-        position: relative;
-        width: 100%;
-        height: auto;
+        position: relative !important;
+        width: 100% !important;
+        height: auto !important;
         min-height: 50vh;
+        opacity: 1 !important;
+        pointer-events: auto !important;
     }
 
+    body.homepage-active .hero-content,
     .hero-content {
         padding: 3rem 2rem;
-        margin-right: 0;
+        margin-right: 0 !important;
         min-height: auto;
     }
 
+    body.homepage-active .content-section,
     .content-section {
-        margin-right: 0;
+        margin-right: 0 !important;
     }
 
+    body.homepage-active .site-footer,
     .site-footer {
-        margin-right: 0;
+        margin-right: 0 !important;
+        z-index: 1 !important;
     }
 
     .hero h1 {
